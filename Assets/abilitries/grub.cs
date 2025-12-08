@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
-using static UnityEngine.RuleTile.TilingRuleOutput;
-
 [CreateAssetMenu]
 public class grub :  enemies
 {
     public grab longa;
-    public override void wuw(GameObject launcher, float anglo)
+    public override int wuw(GameObject launcher, float anglo)
     {
         float xix = 2.15f*Mathf.Cos(anglo * Mathf.Deg2Rad);
         float yiy = 2.15f*Mathf.Sin(anglo * Mathf.Deg2Rad);
@@ -22,24 +19,26 @@ public class grub :  enemies
 
         Vector2 direction = new Vector2(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
 
-        Debug.DrawRay(nin, direction* 1000f, Color.red);
+        Debug.DrawRay(nin, direction* 100f, Color.red);
 
-        RaycastHit2D hit = Physics2D.Raycast(nin, direction, 1000f);
+        RaycastHit2D hit = Physics2D.Raycast(nin, direction, 100f);
 
 
-        if (Physics2D.Raycast(nin, direction, 1000f) == true) {
+        if (Physics2D.Raycast(nin, direction, 100f) == true) {
 
                 if (hit.collider.tag == "mon")
                 {
                     longa.mom = hit.collider.GetComponent<abils>();
                     longa.grabing = longa.mom.sis;
                     longa.manos = true;
+                return 1;
 
                 }
 
             
 
         }
+        return 0;
     }
     
 }

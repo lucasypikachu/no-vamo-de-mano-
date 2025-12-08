@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
-using UnityEngine.WSA;
-using static UnityEditor.PlayerSettings;
 
 public class grab : MonoBehaviour
 {
@@ -13,6 +11,7 @@ public class grab : MonoBehaviour
     public enemies temporal;
     public abils mom;
     public bool manos;
+    public int combo;
     public float posis;
     public int div;
     // Start is called before the first frame update
@@ -72,17 +71,24 @@ public class grab : MonoBehaviour
             Debug.Log(posis / div);
             if (manos == true)
             {
-                grabing.wuw(this.gameObject, posis / div);
-                div = 0;
-                posis = 0;
+                if (div != 0)
+                {
+
+                   combo += grabing.wuw(this.gameObject, posis / div);
+                    div = 0;
+                    posis = 0;
+                }
             }
             else
             {
-                grabing = temporal;
-                grabing.wuw(this.gameObject, posis / div);
+                if (div != 0)
+                {
+                    grabing = temporal;
+                    grabing.wuw(this.gameObject, posis / div);
 
-                div = 0;
-                posis = 0;
+                    div = 0;
+                    posis = 0;
+                        }
             }
             
         }

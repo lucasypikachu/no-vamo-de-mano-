@@ -9,7 +9,7 @@ public class rarat : enemies
     Rigidbody2D momimo;
     
    Rigidbody2D momimo2;
-    public override void wuw(GameObject launcher, float anglo)
+    public override int wuw(GameObject launcher, float anglo)
     {
         float xix = 2.15f * Mathf.Cos(anglo * Mathf.Deg2Rad);
         float yiy = 2.15f * Mathf.Sin(anglo * Mathf.Deg2Rad);
@@ -39,6 +39,7 @@ public class rarat : enemies
                 momimo.AddForce(new Vector2(xix * -100, yiy * -100));
                 momimo2 =launcher.GetComponent<Rigidbody2D>();
                 momimo2.AddForce(new Vector2(xix *100, yiy * 100));
+                return 2;
                 
             }
 
@@ -46,5 +47,6 @@ public class rarat : enemies
 
         }
 
+        return 0;
     }
 }

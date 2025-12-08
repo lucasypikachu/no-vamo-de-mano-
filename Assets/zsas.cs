@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.WSA;
 
 public class zsas : MonoBehaviour
 {
     public Transform jugador; 
-    public float distanciaAtaque = 150f;
+    public float distanciaAtaque = 15f;
     public GameObject monedas;
     public GameObject ratata;
     public GameObject bwarf;
@@ -110,10 +109,10 @@ public class zsas : MonoBehaviour
     }
     void attac3()
     {
-        Instantiate(ratata, new Vector3(Random.Range(839f, 872), 17, transform.position.z), transform.rotation);
-        Instantiate(ratata, new Vector3(Random.Range(839f, 872), 17, transform.position.z), transform.rotation);
-        Instantiate(ratata, new Vector3(Random.Range(839f, 872), 17, transform.position.z), transform.rotation);
-        Instantiate(ratata, new Vector3(Random.Range(839f, 872), 17, transform.position.z), transform.rotation);
+        Instantiate(ratata, new Vector3(Random.Range(88f, 118), 17, transform.position.z), transform.rotation);
+        Instantiate(ratata, new Vector3(Random.Range(88f, 118), 17, transform.position.z), transform.rotation);
+        Instantiate(ratata, new Vector3(Random.Range(88f, 118), 17, transform.position.z), transform.rotation);
+        Instantiate(ratata, new Vector3(Random.Range(88f, 118), 17, transform.position.z), transform.rotation);
 
     }
     IEnumerator attac4()
@@ -123,7 +122,7 @@ public class zsas : MonoBehaviour
         bombs.enabled = false;
         rb.gravityScale = 0f;
         rb.velocity = Vector3.zero;
-        transform.position = new Vector3(Random.Range(839f, 872), 14, transform.position.z);
+        transform.position = new Vector3(Random.Range(88f, 118), 14, transform.position.z);
         yield return new WaitForSeconds(1);
         transform.position = new Vector3(transform.position.x, 16.6f, transform.position.z);
         rb.gravityScale = -0.5f;
@@ -132,7 +131,7 @@ public class zsas : MonoBehaviour
         bombs.enabled = false;
         rb.gravityScale = 0f;
         rb.velocity = Vector3.zero;
-        transform.position = new Vector3(Random.Range(839f, 872), 14, transform.position.z);
+        transform.position = new Vector3(Random.Range(88f, 118), 14, transform.position.z);
         yield return new WaitForSeconds(1);
         transform.position = new Vector3(transform.position.x, 16.6f, transform.position.z);
         rb.gravityScale = -0.5f;
@@ -141,7 +140,7 @@ public class zsas : MonoBehaviour
         bombs.enabled = false;
         rb.gravityScale = 0f;
         rb.velocity = Vector3.zero;
-        transform.position = new Vector3(Random.Range(839f, 872), 14, transform.position.z);
+        transform.position = new Vector3(Random.Range(88f, 118), 14, transform.position.z);
         yield return new WaitForSeconds(1);
         transform.position = new Vector3(transform.position.x, 16.6f, transform.position.z);
         rb.gravityScale = -0.5f;

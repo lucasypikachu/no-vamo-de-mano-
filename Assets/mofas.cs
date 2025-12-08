@@ -38,6 +38,12 @@ public class mofas : MonoBehaviour
         if (Input.GetKey(KeyCode.S) && grounded == false)
         {
             rb.AddForce(new Vector2(0, -10f));
+            this.gameObject.tag = "attas";
+        }
+        else
+        {
+
+            this.gameObject.tag = "Player";
         }
 
     }

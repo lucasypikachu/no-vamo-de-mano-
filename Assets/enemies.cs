@@ -7,9 +7,9 @@ using UnityEngine;
 public class enemies : ScriptableObject
 {
     //habilidad base
-  public virtual void  wuw (GameObject launcher, float anglo)
+  public virtual int  wuw (GameObject launcher, float anglo)
         {
-        
+        return 0;
         }
 
 }
