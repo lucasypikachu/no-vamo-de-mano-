@@ -8,7 +8,7 @@ public class dead : MonoBehaviour
     public int heala;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "attas")
+        if (collision.gameObject.tag == "attas:(")
         {
             heala--;
         }
@@ -21,7 +21,7 @@ public class dead : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.tag == "attas")
+        if (collision.gameObject.tag == "attas:(")
         {
             heala--;
         }

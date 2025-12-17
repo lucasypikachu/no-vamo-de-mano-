@@ -5,7 +5,7 @@ using UnityEngine;
 public class grub :  enemies
 {
     public grab longa;
-    public override int wuw(GameObject launcher, float anglo)
+    public override void wuw(GameObject launcher, float anglo, bool evil)
     {
         float xix = 2.15f*Mathf.Cos(anglo * Mathf.Deg2Rad);
         float yiy = 2.15f*Mathf.Sin(anglo * Mathf.Deg2Rad);
@@ -28,17 +28,16 @@ public class grub :  enemies
 
                 if (hit.collider.tag == "mon")
                 {
+                grab.comobo(1,0);
                     longa.mom = hit.collider.GetComponent<abils>();
                     longa.grabing = longa.mom.sis;
                     longa.manos = true;
-                return 1;
 
                 }
 
             
 
         }
-        return 0;
     }
     
 }

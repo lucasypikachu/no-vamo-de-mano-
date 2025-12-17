@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da1e96ed232d2544b8517a46bbcbf293
+guid: 405c6dea9630da84b8870a08d8f260c2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 750
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,64 +117,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rata_enemigo (1)_1
+      name: "Dise\xF1o sin t\xEDtulo (1)_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1135
-        width: 1992
-        height: 940
+        x: 109
+        y: 1541
+        width: 641
+        height: 269
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6424065a31b4e2946a72b0e31999da06
-      internalID: 1317454146
+      spriteID: 71736234fef63bd4d99f227f00e7c1a6
+      internalID: -1751920043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rata_enemigo (1)_2
+      name: "Dise\xF1o sin t\xEDtulo (1)_1"
       rect:
         serializedVersion: 2
-        x: 348
-        y: 2153
-        width: 1940
-        height: 859
+        x: 809
+        y: 1186
+        width: 595
+        height: 768
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5735aef75ae2f6447b77c8023dedaec2
-      internalID: -857416316
+      spriteID: 8acb47a6b6dd71b4e8536fa050f7c2fb
+      internalID: 508354416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rata_enemigo (1)_3
+      name: "Dise\xF1o sin t\xEDtulo (1)_2"
       rect:
         serializedVersion: 2
-        x: 541
-        y: 84
-        width: 1850
-        height: 872
+        x: 12
+        y: 1255
+        width: 612
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01f2c1bdfdfd5b24e81121bdad6308f9
-      internalID: 1222826291
+      spriteID: fc8b2e580e5738e4594b79c06a6d53b6
+      internalID: -774341428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dise\xF1o sin t\xEDtulo (1)_3"
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 856
+        width: 591
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f76aa61409b1646be15d1b2cec0877
+      internalID: 1743628128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dise\xF1o sin t\xEDtulo (1)_4"
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 18
+        width: 797
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc972ee4eeca47d4dba532183154dc44
+      internalID: -1015974595
       vertices: []
       indices: 
       edges: []
@@ -190,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rata_enemigo (1)_0: 1296913521
-      Rata_enemigo (1)_1: 1317454146
-      Rata_enemigo (1)_2: -857416316
-      Rata_enemigo (1)_3: 1222826291
-      Rata_enemigo (1)_4: 1760097693
+      "Dise\xF1o sin t\xEDtulo (1)_0": -1751920043
+      "Dise\xF1o sin t\xEDtulo (1)_1": 508354416
+      "Dise\xF1o sin t\xEDtulo (1)_2": -774341428
+      "Dise\xF1o sin t\xEDtulo (1)_3": 1743628128
+      "Dise\xF1o sin t\xEDtulo (1)_4": -1015974595
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

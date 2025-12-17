@@ -5,7 +5,7 @@ using UnityEngine;
 public class zsas : MonoBehaviour
 {
     public Transform jugador; 
-    public float distanciaAtaque = 15f;
+    public float distanciaAtaque = 0.1f;
     public GameObject monedas;
     public GameObject ratata;
     public GameObject bwarf;
@@ -32,7 +32,7 @@ public class zsas : MonoBehaviour
         timer += Time.deltaTime;
 
         // Si está suficientemente cerca, ataca
-        if (5f <= timer)
+        if (5.1f <= timer)
         {
             if (distancia <= distanciaAtaque)
             {
@@ -124,6 +124,19 @@ public class zsas : MonoBehaviour
         rb.velocity = Vector3.zero;
         transform.position = new Vector3(Random.Range(88f, 118), 14, transform.position.z);
         yield return new WaitForSeconds(1);
+        rb.velocity = Vector3.zero;
+        transform.position = new Vector3(transform.position.x, 16.6f, transform.position.z);
+        rb.gravityScale = -0.5f;
+        bombs.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        rb.velocity = Vector3.zero;
+        monedas.SetActive(true);
+        bombs.enabled = false;
+        rb.gravityScale = 0f;
+        rb.velocity = Vector3.zero;
+        transform.position = new Vector3(Random.Range(88f, 118), 14, transform.position.z);
+        yield return new WaitForSeconds(1);
+        rb.velocity = Vector3.zero;
         transform.position = new Vector3(transform.position.x, 16.6f, transform.position.z);
         rb.gravityScale = -0.5f;
         bombs.enabled = true;
@@ -131,17 +144,10 @@ public class zsas : MonoBehaviour
         bombs.enabled = false;
         rb.gravityScale = 0f;
         rb.velocity = Vector3.zero;
-        transform.position = new Vector3(Random.Range(88f, 118), 14, transform.position.z);
-        yield return new WaitForSeconds(1);
-        transform.position = new Vector3(transform.position.x, 16.6f, transform.position.z);
-        rb.gravityScale = -0.5f;
-        bombs.enabled = true;
-        yield return new WaitForSeconds(0.5f);
-        bombs.enabled = false;
-        rb.gravityScale = 0f;
         rb.velocity = Vector3.zero;
         transform.position = new Vector3(Random.Range(88f, 118), 14, transform.position.z);
         yield return new WaitForSeconds(1);
+        rb.velocity = Vector3.zero;
         transform.position = new Vector3(transform.position.x, 16.6f, transform.position.z);
         rb.gravityScale = -0.5f;
         bombs.enabled = true;

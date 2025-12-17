@@ -7,9 +7,9 @@ public class prueb : enemies
 {
     //crea una pelota
     public GameObject sus;
-   public override int wuw(GameObject launcher, float anglo)
+   public override void wuw(GameObject launcher, float anglo, bool evil)
     { 
         Instantiate(sus, launcher.transform.position, launcher.transform.rotation);
-        return 0;
+ 
     }
 }

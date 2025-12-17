@@ -21,7 +21,7 @@ public class abils : MonoBehaviour
         momos += Time.deltaTime;
         if (momos >= time) 
         {
-            sis.wuw(this.gameObject, Random.Range(1, 361));
+            sis.wuw(this.gameObject, Random.Range(1, 361),true);
             momos = 0f;
         
         }
